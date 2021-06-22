@@ -19,10 +19,11 @@
       "metadata": {
         "description": "The FQDN of the Active Directory Domain to be created"
       }
+    },
     "domainNetBiosName": {
       "type": "string",
       "metadata": {
-        "description": "The NetBios name of the Active Directory Domain to be created"
+        "description": "The Netbios name of the Active Directory Domain to be created"
       }
     },
     "dnsPrefix": {
@@ -48,7 +49,7 @@
       "metadata": {
         "description": "The location of resources, such as templates and DSC modules, that the template depends on"
       },
-      "defaultValue": "https://raw.githubusercontent.com/jrudley/ADDS-dsc/master/"
+      "defaultValue": "https://raw.githubusercontent.com/mikepfeiffer/azure-domain-controller/master/"
     },
     "_artifactsLocationSasToken": {
       "type": "securestring",
@@ -283,7 +284,7 @@
               "ConfigurationFunction": "CreateADPDC.ps1\\CreateADPDC",
               "Properties": {
                 "DomainName": "[parameters('domainName')]",
-                "DomainNetBIOSName": "[parameters('domainNetBiosName')],
+                "DomainNetBIOSName":"[parameters('domainNetBiosName')]",
                 "AdminCreds": {
                   "UserName": "[parameters('adminUsername')]",
                   "Password": "PrivateSettingsRef:AdminPassword"
