@@ -49,7 +49,7 @@
       "metadata": {
         "description": "The location of resources, such as templates and DSC modules, that the template depends on"
       },
-      "defaultValue": "https://raw.githubusercontent.com/mikepfeiffer/azure-domain-controller/master/"
+      "defaultValue": "https://raw.githubusercontent.com/jrudley/ADDS-dsc/master/"
     },
     "_artifactsLocationSasToken": {
       "type": "securestring",
