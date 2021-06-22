@@ -37,11 +37,12 @@
       "metadata": {
         "description": "The version of Windows Server to use"
       },
-      "defaultValue": "2016-Datacenter",
+      "defaultValue": "2019-Datacenter",
       "allowedValues": [
         "2012-Datacenter",
         "2012-R2-Datacenter",
-        "2016-Datacenter"
+        "2016-Datacenter",
+        "2019-Datacenter"
       ]
     },
     "_artifactsLocation": {
